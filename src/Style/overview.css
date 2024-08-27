@@ -1,0 +1,88 @@
+/* Overall container */
+.container {
+    display: flex;
+    position: relative;
+    height: 100vh;
+  }
+  
+  /* Login/Signup section */
+  .login-signup {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+  }
+  
+  .login-signup h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-signup .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .login-signup .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .login-signup .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .login-signup button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-signup button:nth-child(2) {
+    background-color: #28a745;
+  }
+  
+  /* Course overview section */
+  .course-overview {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .course-overview h1 {
+    margin-bottom: 20px;
+  }
+  
+  .course-overview ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .course-overview li {
+    margin-bottom: 10px;
+  }
+  
+  .course-overview p {
+    margin-top: 20px;
+  }
+  
+  /* Vertical JavaScript text */
+  .vertical-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    white-space: nowrap;
+  }
+  
+  .vertical-text span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  

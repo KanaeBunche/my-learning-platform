@@ -1,0 +1,8 @@
+/* Ensure the body takes up the full height and has no margin */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Marcellus', serif; /* Apply Marcellus font */
+  /* Background color for the entire page */
+}

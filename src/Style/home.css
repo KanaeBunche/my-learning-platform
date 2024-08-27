@@ -1,0 +1,133 @@
+
+  
+  /* Container for the whole app */
+  .app-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background: #FDF3DD;
+  }
+  
+  /* Styling for the text content */
+  .text-content {
+    max-width: 800px; /* Adjust this value to set the maximum width of the text content */
+    margin: 0 auto; /* Center the text content horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the start */
+    align-items: center; /* Center align items horizontally */
+    padding: 20px;
+    position: relative; /* Allow positioning adjustments */
+    top: 20%; /* Move the text content higher */
+    text-align: center; /* Center-align text */
+  }
+  
+  /* Increase text sizes for readability */
+  .text-content h1 {
+    font-size: 4rem; /* Adjust font size for main heading */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .text-content h2 {
+    font-size: 2.5rem; /* Adjust font size for subheadings */
+    margin-bottom: 15px;
+  }
+  
+  .text-content p, .text-content ul {
+    font-size: 1.5rem; /* Adjust font size for paragraphs and list items */
+    line-height: 1.6;
+  }
+  
+  /* Container for the squares */
+  .squares-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+    width: 50%;
+    height: 100%;
+  }
+  
+  /* Styling for each square */
+  /* Styling for each square */
+  .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem; /* Adjust font size for square text */
+    font-weight: bold;
+    height: 100%;
+    border-radius: 0px;
+    position: relative;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    overflow: hidden;
+  }
+  
+  /* Overlay styles */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Zoom out effect on hover */
+  .square:hover {
+    transform: scale(0.9); /* Zoom out effect */
+  }
+  
+  /* Show overlay on hover */
+  .square:hover .overlay {
+    opacity: 1; /* Show the overlay */
+  }
+  
+  /* Style for the button in the overlay */
+  .overlay .button {
+    background-color: #FFF;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  /* Add the typing animation to the heading */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    0% { border-color: transparent; }
+    100% { border-color: black; }
+  }
+  
+  /* Wrapper for the text with a blinking cursor */
+  .typing-effect {
+    overflow: hidden; /* Ensures the text does not overflow during animation */
+    white-space: nowrap; /* Keeps the text in a single line */
+    border-right: .15em solid black; /* Creates the cursor effect */
+    animation: 
+      typing 4s steps(40, end) 1s 1 normal both, 
+      blink .75s step-end infinite;
+  }
+  
+  ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+  }
+  
